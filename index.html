@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Portafolio</title>
+  <meta name="description" content="Portafolio minimalista para presentar mis futuros proyectos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="#inicio">Mi Nombre</a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button id="themeToggle" class="icon-button" aria-label="Cambiar tema" title="Cambiar tema">☾</button>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero container">
+      <h1 class="title">Construyendo ideas simples y útiles</h1>
+      <p class="subtitle">Este es mi espacio para compartir los proyectos que iré creando. Minimalismo, claridad y propósito.</p>
+      <div class="hero-actions">
+        <a class="button" href="#proyectos">Ver proyectos</a>
+        <a class="button ghost" href="#contacto">Contactar</a>
+        <a class="button" href="flutter.html" title="Vista Flutter">Vista Flutter</a>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section container">
+      <div class="section-head">
+        <h2>Proyectos</h2>
+        <p class="muted">Una selección de trabajos. Aquí aparecerán mis futuros proyectos.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="media">
+            <img src="https://picsum.photos/seed/web1/800/500" alt="Proyecto de página web minimalista">
+          </div>
+          <h3>Proyecto futuro #1</h3>
+          <p>Descripción breve del proyecto. Objetivo, tecnología o problema que resuelve.</p>
+          <div class="card-actions">
+            <a class="link" href="#" aria-disabled="true">Próximamente</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="media">
+            <img src="https://picsum.photos/seed/mobile1/800/500" alt="Aplicación móvil con interfaz limpia">
+          </div>
+          <h3>Proyecto futuro #2</h3>
+          <p>Descripción breve del proyecto. Objetivo, tecnología o problema que resuelve.</p>
+          <div class="card-actions">
+            <a class="link" href="#" aria-disabled="true">Próximamente</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="media">
+            <img src="https://picsum.photos/seed/web2/800/500" alt="Landing page moderna">
+          </div>
+          <h3>Proyecto futuro #3</h3>
+          <p>Descripción breve del proyecto. Objetivo, tecnología o problema que resuelve.</p>
+          <div class="card-actions">
+            <a class="link" href="#" aria-disabled="true">Próximamente</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section container">
+      <div class="section-head">
+        <h2>Sobre mí</h2>
+        <p class="muted">Breve introducción, intereses y tecnologías preferidas.</p>
+      </div>
+      <p>
+        Soy una persona curiosa enfocada en crear productos sencillos que resuelvan problemas reales. Me interesan el diseño limpio, la accesibilidad y el rendimiento.
+      </p>
+    </section>
+
+    <section id="contacto" class="section container">
+      <div class="section-head">
+        <h2>Contacto</h2>
+        <p class="muted">¿Tienes una idea o proyecto? Hablemos.</p>
+      </div>
+      <ul class="contact-list">
+        <li><a class="link" href="mailto:tu.email@ejemplo.com">tu.email@ejemplo.com</a></li>
+        <li><a class="link" href="#" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
+        <li><a class="link" href="#" target="_blank" rel="noreferrer noopener">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="muted">© <span id="year"></span> Mi Nombre. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
+
