@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vista Flutter — Portafolio</title>
+  <meta name="description" content="Segunda vista inspirada en Flutter.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stile.css">
+</head>
+<body class="flutter-view">
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="index.html">← Volver</a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#widgets">Widgets</a>
+        <a href="#diseno">Diseño</a>
+      </nav>
+      <button id="themeToggle" class="icon-button" aria-label="Cambiar tema" title="Cambiar tema">☾</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1 class="title">UI estilo Flutter</h1>
+      <p class="subtitle">Bloques modulares, elevación sutil y jerarquía clara.</p>
+      <div class="hero-actions">
+        <a class="button" href="#widgets">Ver widgets</a>
+      </div>
+    </section>
+
+    <section id="widgets" class="section container">
+      <div class="section-head">
+        <h2>Widgets</h2>
+        <p class="muted">Componentes simples inspirados en tarjetas con elevación.</p>
+      </div>
+      <div class="grid">
+        <article class="card project">
+          <div class="media">
+            <img src="https://picsum.photos/seed/flutterapp/800/500" alt="App Flutter estilo Material 3">
+          </div>
+          <h3>Proyecto Flutter: Task Manager</h3>
+          <p>App para organizar tareas con Material 3 y estado reactivo.</p>
+          <div class="badges">
+            <span class="badge">Dart</span>
+            <span class="badge">Material 3</span>
+            <span class="badge">Riverpod</span>
+          </div>
+          <div class="card-actions">
+            <a class="button" href="#" aria-disabled="true">Demo</a>
+            <a class="button ghost" href="#" aria-disabled="true">Código</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Card</h3>
+          <p>Contenedor con borde redondeado, sombra suave y padding.</p>
+          <div class="card-actions">
+            <button class="button" onclick="alert('Ejemplo de acción')">Acción</button>
+          </div>
+        </article>
+        <article class="card">
+          <h3>List Tile</h3>
+          <p>Elemento de lista con título y subtítulo sutil.</p>
+          <ul class="contact-list">
+            <li>Título</li>
+            <li class="muted">Subtítulo</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Buttons</h3>
+          <p>Primario y fantasma alineados al estilo material minimal.</p>
+          <div class="card-actions">
+            <a class="button" href="#">Primario</a>
+            <a class="button ghost" href="#">Fantasma</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="diseno" class="section container">
+      <div class="section-head">
+        <h2>Diseño</h2>
+        <p class="muted">Colores, espaciados y tipografía consistentes.</p>
+      </div>
+      <p>
+        Esta vista mantiene la misma base visual: variables de tema, grilla responsiva y componentes reutilizables para una experiencia coherente.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="muted">© <span id="year"></span> Mi Nombre — Vista Flutter</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
+
